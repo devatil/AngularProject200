@@ -8,6 +8,7 @@ import { AccordionItem } from './components/accordion/accordion-item';
 })
 export class AppComponent {
   title = 'AngularChalleges';
+  progressbar = 25;
 
   accordionItems: AccordionItem[] = [
     {
