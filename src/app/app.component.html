@@ -10,6 +10,14 @@
 <main>
   <app-card
     [iconClasses]="'fas fa-info-circle'"
+    [title]="'Progressbar'"
+    [subTitle]="'Component'"
+  >
+    <app-progressbar body [value]="progressbar"></app-progressbar>
+    <button footer (click)="progressbar = 75">Update</button>
+  </app-card>
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
     [title]="'Accordion'"
     [subTitle]="'Component'"
   >
