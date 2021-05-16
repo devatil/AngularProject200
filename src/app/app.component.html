@@ -7,12 +7,21 @@
     <li>Others</li>
   </ul>
 </app-toolbar>
+<main>
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
+    [title]="'Accordion'"
+    [subTitle]="'Component'"
+  >
+    <app-accordion body [items]="accordionItems"></app-accordion>
+  </app-card>
 
-<app-card
-  [iconClasses]="'fas fa-info-circle'"
-  [title]="'Card'"
-  [subTitle]="'Component'"
->
-  <p body>Body Content</p>
-  <p footer>Footer Content</p>
-</app-card>
+  <app-card
+    [iconClasses]="'fas fa-info-circle'"
+    [title]="'Card'"
+    [subTitle]="'Component'"
+  >
+    <p body>Body Content</p>
+    <p footer>Footer Content</p>
+  </app-card>
+</main>
