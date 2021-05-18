@@ -8,9 +8,10 @@ import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 import { StarratingComponent } from './components/starrating/starrating.component';
+import { TipOfPageComponent } from './components/tip-of-page/tip-of-page.component';
 
 @NgModule({
-  declarations: [AppComponent, ToolbarComponent, CardComponent, AccordionComponent, ProgressbarComponent, StarratingComponent],
+  declarations: [AppComponent, ToolbarComponent, CardComponent, AccordionComponent, ProgressbarComponent, StarratingComponent, TipOfPageComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

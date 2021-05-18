@@ -12,7 +12,6 @@ export class StarratingComponent {
 
   get fullStars(): number[] {
     const totalFullStars = Math.floor(this.rating);
-    console.log(totalFullStars);
     return Array(totalFullStars).fill(0);
   }
 
@@ -25,8 +24,6 @@ export class StarratingComponent {
 
   get emptyStars(): number[] {
     const totalEmptyStars = Math.floor(this.highestRating - this.rating);
-    console.log(totalEmptyStars);
-
     return Array(totalEmptyStars).fill(0);
   }
 }
