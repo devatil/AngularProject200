@@ -8,18 +8,4 @@ import { AccordionItem } from './components/accordion/accordion-item';
 })
 export class AppComponent {
   title = 'AngularChalleges';
-  progressbar = 25;
-
-  accordionItems: AccordionItem[] = [
-    {
-      title: 'Example 1',
-      content: 'Exaples Content1',
-      isExpanded: false,
-    },
-    {
-      title: 'Example 2',
-      content: 'Exaples Content2',
-      isExpanded: false,
-    },
-  ];
 }
