@@ -15,6 +15,7 @@ import { PipesModule } from './pipes/pipes.module';
 import { DirectivesModule } from './directives/directives.module';
 import { ServicesModule } from './services/services.module';
 import { TruncatePipe } from './truncate.pipe';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { TruncatePipe } from './truncate.pipe';
     TipOfPageComponent,
     ComponentDocumentationComponent,
     TruncatePipe,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
