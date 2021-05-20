@@ -1,5 +1,13 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Loader'"
+  [subTitle]="'Component'"
+>
+  <app-loader body [isloader]="true" [loaderType]="loaderType"></app-loader>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Truncate'"
   [subTitle]="'Pipes'"
 >

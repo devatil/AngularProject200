@@ -7,5 +7,6 @@ import { PIPES_ROUTES } from './pipes.routes';
 @NgModule({
   declarations: [PipeDocumentationComponent],
   imports: [CommonModule, RouterModule.forChild(PIPES_ROUTES)],
+  exports: [],
 })
 export class PipesModule {}

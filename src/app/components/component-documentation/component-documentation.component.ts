@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item';
+import { LoaderType } from '../loader/models/loader-types.enums';
 
 @Component({
   selector: 'app-component-documentation',
@@ -8,6 +9,8 @@ import { AccordionItem } from '../accordion/accordion-item';
 })
 export class ComponentDocumentationComponent {
   progressbar = 25;
+
+  loaderType = LoaderType.Loading;
 
   accordionItems: AccordionItem[] = [
     {
