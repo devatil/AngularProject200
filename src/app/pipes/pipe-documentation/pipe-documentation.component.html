@@ -1,1 +1,24 @@
-<p>pipe-documentation works!</p>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Truncate'"
+  [subTitle]="'Pipes'"
+>
+  <div body>
+    <p>{{ "1111111111111111111111111111" | creditCardPipe }}</p>
+    <p>{{ "1232322122445567" | creditCardPipe }}</p>
+    <p>{{ "2sd3333333323567" | creditCardPipe }}</p>
+  </div>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Truncate'"
+  [subTitle]="'Pipes'"
+>
+  <p body>
+    {{
+      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint inventore aliquam, alias magni beatae! Id quaerat consequatur est dolore. Debitis neque quos eaque asperiores impedit consectetur natus officiis nihil"
+        | truncate: 44
+    }}
+  </p>
+</app-card>

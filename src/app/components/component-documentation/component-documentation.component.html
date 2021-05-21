@@ -1,22 +1,28 @@
 <app-card
   [iconClasses]="'fas fa-info-circle'"
-  [title]="'Loader'"
+  [title]="'Credi Cart Input'"
   [subTitle]="'Component'"
 >
-  <app-loader body [isloader]="true" [loaderType]="loaderType"></app-loader>
+  <div body>
+    <app-credit-card-input
+      [creditCardNumber]="'4564466784445778'"
+      [isReadOnly]="false"
+    >
+    </app-credit-card-input>
+    <app-credit-card-input
+      [creditCardNumber]="'4564466784445778'"
+      [isReadOnly]="true"
+    >
+    </app-credit-card-input>
+  </div>
 </app-card>
 
 <app-card
   [iconClasses]="'fas fa-info-circle'"
-  [title]="'Truncate'"
-  [subTitle]="'Pipes'"
+  [title]="'Loader'"
+  [subTitle]="'Component'"
 >
-  <p body>
-    {{
-      "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto sint inventore aliquam, alias magni beatae! Id quaerat consequatur est dolore. Debitis neque quos eaque asperiores impedit consectetur natus officiis nihil"
-        | truncate: 44
-    }}
-  </p>
+  <app-loader body [isloader]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
 
 <app-card
@@ -31,7 +37,7 @@
   [title]="'Star Raiting'"
   [subTitle]="'Component'"
 >
-  <app-starrating body [rating]="4.5"></app-starrating>
+  <app-starrating body [rating]="3.5"></app-starrating>
 </app-card>
 
 <app-card
