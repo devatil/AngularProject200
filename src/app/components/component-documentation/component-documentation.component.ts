@@ -10,7 +10,7 @@ import { LoaderType } from '../loader/models/loader-types.enums';
 export class ComponentDocumentationComponent {
   progressbar = 25;
 
-  loaderType = LoaderType.Loading;
+  loaderType = LoaderType.Circular;
 
   accordionItems: AccordionItem[] = [
     {

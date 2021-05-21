@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
-import { CardComponent } from './components/card/card.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 import { StarratingComponent } from './components/starrating/starrating.component';
@@ -14,29 +13,30 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { PipesModule } from './pipes/pipes.module';
 import { DirectivesModule } from './directives/directives.module';
 import { ServicesModule } from './services/services.module';
-import { TruncatePipe } from './truncate.pipe';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    CardComponent,
     AccordionComponent,
     ProgressbarComponent,
     StarratingComponent,
     TipOfPageComponent,
     ComponentDocumentationComponent,
-    TruncatePipe,
     LoaderComponent,
+    CreditCardInputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
-    PipesModule,
     DirectivesModule,
     ServicesModule,
+    PipesModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
