@@ -6,6 +6,7 @@ import { PIPES_ROUTES } from './pipes.routes';
 import { CardComponent } from '../components/card/card.component';
 import { TruncatePipe } from '../share/pipes/truncate.pipe';
 import { CreditCardPipePipe } from '../share/pipes/credit-card-pipe.pipe';
+import { FlattenPipe } from '../share/pipes/flatten.pipe';
 
 @NgModule({
   declarations: [
@@ -13,8 +14,9 @@ import { CreditCardPipePipe } from '../share/pipes/credit-card-pipe.pipe';
     CardComponent,
     TruncatePipe,
     CreditCardPipePipe,
+    FlattenPipe,
   ],
   imports: [CommonModule, RouterModule.forChild(PIPES_ROUTES)],
-  exports: [CardComponent, TruncatePipe, CreditCardPipePipe],
+  exports: [CardComponent, TruncatePipe, CreditCardPipePipe, FlattenPipe],
 })
 export class PipesModule {}

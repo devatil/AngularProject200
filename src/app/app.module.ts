@@ -18,6 +18,7 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinpostComponent } from './components/linkedinpost/linkedinpost.component';
+
 @NgModule({
   declarations: [
     AppComponent,
