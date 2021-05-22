@@ -18,6 +18,7 @@ import { CreditCardInputComponent } from './components/credit-card-input/credit-
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinpostComponent } from './components/linkedinpost/linkedinpost.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { LinkedinpostComponent } from './components/linkedinpost/linkedinpost.co
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedinpostComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
