@@ -16,7 +16,8 @@ import { ServicesModule } from './services/services.module';
 import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
-
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedinpostComponent } from './components/linkedinpost/linkedinpost.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +29,8 @@ import { FormsModule } from '@angular/forms';
     ComponentDocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
+    TwitterPostComponent,
+    LinkedinpostComponent,
   ],
   imports: [
     BrowserModule,
