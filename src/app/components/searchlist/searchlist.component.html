@@ -1,0 +1,15 @@
+<app-deboucesearch
+  [searchTerm]="searchTerm"
+  (searchUpdate)="searchUpdateTerm($event)"
+></app-deboucesearch>
+
+<ul *ngIf="searchTerm && !hasBeenSelected">
+  <div class="item-container">
+    <li
+      *ngFor="let item of items | filterTerm: searchTerm"
+      (click)="selectSearchTerm(item)"
+    >
+      {{ item }}
+    </li>
+  </div>
+</ul>

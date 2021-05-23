@@ -14,6 +14,10 @@ import { ShareModule } from '../share/share.module';
 import { FormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
 import { ToggleComponent } from './toggle/toggle.component';
+import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.component';
+import { DeboucesearchComponent } from './deboucesearch/deboucesearch.component';
+import { SearchlistComponent } from './searchlist/searchlist.component';
+import { PipesModule } from '../pipes/pipes.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,10 @@ import { ToggleComponent } from './toggle/toggle.component';
     AccordionComponent,
     QuoteComponent,
     ToggleComponent,
+    RichTextViewerComponent,
+    DeboucesearchComponent,
+    SearchlistComponent,
   ],
-  imports: [CommonModule, ShareModule, FormsModule],
+  imports: [CommonModule, ShareModule, PipesModule, FormsModule],
 })
 export class ComponentModule {}
