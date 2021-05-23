@@ -13,6 +13,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { ShareModule } from '../share/share.module';
 import { FormsModule } from '@angular/forms';
 import { QuoteComponent } from './quote/quote.component';
+import { ToggleComponent } from './toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { QuoteComponent } from './quote/quote.component';
     ProgressbarComponent,
     AccordionComponent,
     QuoteComponent,
+    ToggleComponent,
   ],
   imports: [CommonModule, ShareModule, FormsModule],
 })
