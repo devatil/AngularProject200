@@ -9,7 +9,7 @@ export class ModalComponent {
   @Input()
   title = '';
 
-  isHidden = false;
+  isHidden = true;
 
   close() {
     this.isHidden = true;

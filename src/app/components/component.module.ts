@@ -12,6 +12,7 @@ import { ProgressbarComponent } from './progressbar/progressbar.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { ShareModule } from '../share/share.module';
 import { FormsModule } from '@angular/forms';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     StarratingComponent,
     ProgressbarComponent,
     AccordionComponent,
+    QuoteComponent,
   ],
   imports: [CommonModule, ShareModule, FormsModule],
 })
