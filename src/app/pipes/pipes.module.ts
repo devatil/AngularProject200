@@ -20,6 +20,6 @@ import { FilterTermPipe } from '../share/pipes/filter-term.pipe';
     FilterTermPipe,
   ],
   imports: [CommonModule, ShareModule, RouterModule.forChild(PIPES_ROUTES)],
-  exports: [TruncatePipe, CreditCardPipePipe, FlattenPipe],
+  exports: [TruncatePipe, CreditCardPipePipe, FlattenPipe, FilterTermPipe],
 })
 export class PipesModule {}

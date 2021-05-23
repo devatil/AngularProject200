@@ -1,3 +1,36 @@
+<h1>Component</h1>
+<hr />
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Rich Text Viewer'"
+  [subTitle]="'Component'"
+>
+  <app-searchlist
+    body
+    [items]="['United States', 'Mexico', 'United Arab Emirates']"
+  >
+  </app-searchlist>
+</app-card>
+
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Rich Text Viewer'"
+  [subTitle]="'Component'"
+>
+  <app-deboucesearch
+    body
+    (searchUpdate)="debounceExampleMetod($event)"
+  ></app-deboucesearch>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
+  [title]="'Rich Text Viewer'"
+  [subTitle]="'Component'"
+>
+  <div body></div>
+</app-card>
+
 <app-card
   [iconClasses]="'fas fa-info-circle'"
   [title]="'Toggle'"

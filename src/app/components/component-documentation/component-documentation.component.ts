@@ -24,4 +24,8 @@ export class ComponentDocumentationComponent {
       isExpanded: false,
     },
   ];
+
+  debounceExampleMetod(value: string) {
+    console.log(value);
+  }
 }
