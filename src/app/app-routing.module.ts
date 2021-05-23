@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ComponentDocumentationComponent } from './components/component-documentation/component-documentation.component';
-import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 export const routes: Routes = [
   {
