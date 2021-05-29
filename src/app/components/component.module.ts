@@ -18,6 +18,7 @@ import { RichTextViewerComponent } from './rich-text-viewer/rich-text-viewer.com
 import { DeboucesearchComponent } from './deboucesearch/deboucesearch.component';
 import { SearchlistComponent } from './searchlist/searchlist.component';
 import { PipesModule } from '../pipes/pipes.module';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { PipesModule } from '../pipes/pipes.module';
     RichTextViewerComponent,
     DeboucesearchComponent,
     SearchlistComponent,
+    CounterComponent,
   ],
   imports: [CommonModule, ShareModule, PipesModule, FormsModule],
 })

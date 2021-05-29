@@ -1,0 +1,29 @@
+input {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  display: inline;
+  padding: 5px;
+  color: white;
+
+  &.increment {
+    background-color: green;
+    border: 1px solid green;
+  }
+
+  &.decrement {
+    background-color: red;
+    border: 1px solid red;
+  }
+}
+
+.counter-container {
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  display: flex;
+}
