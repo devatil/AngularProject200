@@ -19,6 +19,7 @@ import { DeboucesearchComponent } from './deboucesearch/deboucesearch.component'
 import { SearchlistComponent } from './searchlist/searchlist.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { CounterComponent } from './counter/counter.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { CounterComponent } from './counter/counter.component';
     DeboucesearchComponent,
     SearchlistComponent,
     CounterComponent,
+    SimpleTableComponent,
   ],
   imports: [CommonModule, ShareModule, PipesModule, FormsModule],
 })
