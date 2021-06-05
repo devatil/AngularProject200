@@ -20,6 +20,7 @@ import { SearchlistComponent } from './searchlist/searchlist.component';
 import { PipesModule } from '../pipes/pipes.module';
 import { CounterComponent } from './counter/counter.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { PagingComponent } from './paging/paging.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
     SearchlistComponent,
     CounterComponent,
     SimpleTableComponent,
+    PagingComponent,
   ],
   imports: [CommonModule, ShareModule, PipesModule, FormsModule],
 })
