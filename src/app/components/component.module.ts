@@ -21,6 +21,7 @@ import { PipesModule } from '../pipes/pipes.module';
 import { CounterComponent } from './counter/counter.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
 import { PagingComponent } from './paging/paging.component';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { PagingComponent } from './paging/paging.component';
     CounterComponent,
     SimpleTableComponent,
     PagingComponent,
+    TabComponent,
   ],
   imports: [CommonModule, ShareModule, PipesModule, FormsModule],
 })

@@ -2,10 +2,24 @@
 <hr />
 <app-card
   [iconClasses]="'fas fa-info-circle'"
+  [title]="'Tabs'"
+  [subTitle]="'Component'"
+>
+  <app-tab body [tabs]="tabs" (selectedTabIndex)="selectTab = $event">
+    <app-paging *ngIf="selectTab === 0" [totalItems]="200"></app-paging>
+    <app-counter *ngIf="selectTab === 1"></app-counter>
+  </app-tab>
+</app-card>
+<app-card
+  [iconClasses]="'fas fa-info-circle'"
   [title]="'Pagign'"
   [subTitle]="'Component'"
 >
-  <app-paging style="display: flex; justify-content: center" body></app-paging>
+  <app-paging
+    style="display: flex; justify-content: center"
+    body
+    totalItems="200"
+  ></app-paging>
 </app-card>
 <app-card
   [iconClasses]="'fas fa-info-circle'"

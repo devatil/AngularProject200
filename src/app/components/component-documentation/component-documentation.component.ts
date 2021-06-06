@@ -25,6 +25,13 @@ export class ComponentDocumentationComponent {
     },
   ];
 
+  tabs: { title: string; active: boolean }[] = [
+    { title: 'Tab 1', active: true },
+    { title: 'Tab 2', active: false },
+  ];
+
+  selectTab = 0;
+
   debounceExampleMetod(value: string) {
     console.log(value);
   }
